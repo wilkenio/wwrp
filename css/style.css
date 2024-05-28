@@ -9,7 +9,7 @@
     --cor-1: #cfa343;
     --cor-2: #8d8d8d;
     --cor-3:  #3b3b3b;;
-    --cor-4: #121922;
+    --cor-4: #3b3b3b;    ;
     --cor-5:#111C29;
 }
 
@@ -60,8 +60,7 @@ p {
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: #3b3b3b;
-    color: white;
+    color: var(--cor-3);
 }
 
 .row {
@@ -89,6 +88,7 @@ p {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+    color: white;
 }
 
 .btn {
@@ -106,7 +106,7 @@ p {
 }
 
 .header {
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#110f0f, var(--cor-3));
 }
 
 .categories {
@@ -483,7 +483,7 @@ th:last-child {
 
 .account-page {
     /* padding: 50px 0; */
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#000000, var(--cor-3));
 }
 
 .form-container {
