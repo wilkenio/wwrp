@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta  - RedStore | Loja Virtual Design</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/logo.png" width="125px" alt="Logo da loja">
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html">
+                <img src="./images/cart.png" width="30px" height="30px">
+            </a>
+            <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-------- Conta ------>
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Entrar</span>
+                            <span onclick="register()">Registrar</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Nome de usuário">
+                            <input type="password" placeholder="Senha">
+                            <button type="submit" class="btn">Entrar</button>
+                            <a href="">esqueci minha senha</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Nome de usuário">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Senha">
+                            <button type="submit" class="btn">Registrar</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+    
+        <script src="./js/script.js"></script>
+        <script src="./js/form-switch.js"></script>
+
+</body>
+
+</html>
