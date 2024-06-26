@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto</title>
+</head>
+<body>
+    <?php
+
+session_start();
+if (!isset($_SESSION['adm'])) {
+    header("Location: ../pages/loginAdm.php");
+    exit();
+}
+    // Verifique se há um ID de produto válido na URL
+    if (isset($_GET['id']) && !empty($_GET['id'])) {
+        $id_produto = $_GET['id'];
+
+        // Incluir o arquivo de conexão com o banco de dados
+        require '../backend/connectDatabase/connectDB.php';
+
+        // Query para buscar o produto específico pelo ID
+        $sql = "SELECT * FROM produtos WHERE id = :id";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':id', $id_produto);
+        $stmt->execute();
+
+        // Verificar se encontrou o produto
+        if ($stmt->rowCount() > 0) {
+            $produto = $stmt->fetch(PDO::FETCH_ASSOC);
+            $nome_produto = $produto['nome_produto'];
+            $breve_descricao = $produto['breve_descricao'];
+            $valor = $produto['valor'];
+            $imagem_url = $produto['imagem_url'];
+        } else {
+            // Se não encontrou o produto, redirecionar ou exibir uma mensagem de erro
+            header("Location: ../index.php");
+            exit();
+        }
+    } else {
+        // Se não houver ID de produto válido na URL, redirecionar ou exibir uma mensagem de erro
+        header("Location: ../index.php");
+        exit();
+    }
+    ?>
+
+    <form action="../backend/editarProduto.php" method="post" enctype="multipart/form-data">
+        <h1>Editar Produto</h1>
+        <img id="img-edit" width="10%" src="../backend/<?php echo $imagem_url; ?>" alt="">
+        <input type="hidden" name="id_produto" value="<?php echo $id_produto; ?>">
+        <input type="file" name="novo_produto_imagem" onchange="alterouImagem()" >
+        <input type="text" name="nome_produto" placeholder="Nome Produto" value="<?php echo $nome_produto; ?>" required>
+        <input type="text" name="breve_descricao" placeholder="Breve Descrição" value="<?php echo $breve_descricao; ?>" required>
+        <input type="number" name="valor" placeholder="Valor" value="<?php echo $valor; ?>" required>
+        <button type="submit">Salvar Alterações</button>
+        <a href="../index.php">Voltar para o Site</a>
+    </form>
+
+
+    <script>
+        function alterouImagem(){
+            document.getElementById('img-edit').style.display="none";
+        }
+    </script>
+</body>
+</html>
