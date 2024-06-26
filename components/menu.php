@@ -13,7 +13,7 @@
             session_start(); // Certifique-se de iniciar a sessão
             if (isset($_SESSION['adm'])) {
                 echo '
-                        <li class="menu-adm" title="Apenas adm"><a href="pages/addProduto.php">Adicionar Produto</a></li>
+                        <li class="menu-adm" title="Apenas adm"><a href="pages/addProduto.php">Adicionar Produto </a></li>
                         <li class="menu-adm" title="Apenas adm"><a href="pages/vendas.php">Vendas</a></li>
                         <li class="menu-adm" title="Apenas adm"><a href="backend/logout.php">Sair de ADM</a></li>
                     ';
@@ -24,3 +24,5 @@
     <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
 </div>
 </div>
+
+        <!---->

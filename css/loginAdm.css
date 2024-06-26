@@ -1,20 +1,52 @@
-body{
+body {
     background-color: #303030;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 99vh;
+    height: 100vh; /* Corrigido para ocupar toda a altura da tela */
+    margin: 0; /* Remove a margem padrão do body */
+    font-family: Arial, sans-serif; /* Fonte padrão */
 }
+a{
+    text-align: center;
+    margin-top: 10%;
+    color: #b1911d;
+}
+form {
 
-form{
-    width: 40%;
-    background-color: rgb(158, 158, 158);
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 5%; /* Ajustado para manter consistência */
+    border-radius: 8px; /* Arredondamento maior para um visual mais suave */
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.363); /* Adiciona uma sombra leve */
+    width: 100%; /* Para dispositivos móveis */
+    max-width: 400px; /* Limita a largura máxima */
+}
+form img{
+    margin-left: 22%;
 }
 
-form input{
-    margin: 2%;
-    padding: 3%;
+form h1{
+    color: #aaaaaa;
+}
+form input {
+    margin: 10px 0; /* Margem vertical para espaçamento uniforme */
+    padding: 12px; /* Aumenta o padding para inputs maiores */
+    border: 1px solid #ddd; /* Adiciona uma borda leve */
+    border-radius: 4px; /* Arredondamento dos inputs */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+
+#entrar{
+    cursor: pointer;
+    background-color: #b1911d;
+    color: white;
+    border: none;
+}
+h1 {
+    padding: 10px 0; /* Padding vertical */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Cor do texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }

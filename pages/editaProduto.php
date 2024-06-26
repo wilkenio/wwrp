@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Produto</title>
     <link rel="stylesheet" href="../css/editaproduto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <?php
@@ -47,14 +48,18 @@ if (!isset($_SESSION['adm'])) {
     ?>
 
     <form action="../backend/editarProduto.php" method="post" enctype="multipart/form-data">
-        <h1>Editar Produto</h1>
-        <img id="img-edit" width="10%" src="../backend/<?php echo $imagem_url; ?>" alt="">
+        <h1><i class="bi bi-pencil-fill"></i> Editar Produto </h1>
+        <img id="img-edit"  src="../backend/<?php echo $imagem_url; ?>" alt="">
         <input type="hidden" name="id_produto" value="<?php echo $id_produto; ?>">
-        <input type="file" name="novo_produto_imagem" onchange="alterouImagem()" >
+        <input id="edit-img-file" type="file" name="novo_produto_imagem" onchange="alterouImagem()" >
+        <label id="upload-edit-file" for="edit-img-file"><i class="bi bi-cloud-arrow-up"></i> Carregar Imagem</label>
+        <p>Nome do Produto:</p>
         <input type="text" name="nome_produto" placeholder="Nome Produto" value="<?php echo $nome_produto; ?>" required>
+        <p>Descrição:</p>
         <input type="text" name="breve_descricao" placeholder="Breve Descrição" value="<?php echo $breve_descricao; ?>" required>
+        <p>Valor:</p>
         <input type="number" name="valor" placeholder="Valor" value="<?php echo $valor; ?>" required>
-        <button type="submit">Salvar Alterações</button>
+        <button type="submit" id="btt-edit">Salvar Alterações <i class="bi bi-pencil"></i></button>
         <a href="../index.php">Voltar para o Site</a>
     </form>
 

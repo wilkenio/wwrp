@@ -6,6 +6,8 @@ body {
     height: 100vh; /* Corrigido para ocupar toda a altura da tela */
     margin: 0; /* Remove a margem padrão do body */
     font-family: Arial, sans-serif; /* Fonte padrão */
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 a{
     text-align: center;
@@ -13,7 +15,6 @@ a{
     color: #b1911d;
 }
 form {
-
     display: flex;
     flex-direction: column;
     padding: 5%; /* Ajustado para manter consistência */
@@ -21,13 +22,25 @@ form {
     box-shadow: 0 4px 40px rgba(0, 0, 0, 0.363); /* Adiciona uma sombra leve */
     width: 100%; /* Para dispositivos móveis */
     max-width: 400px; /* Limita a largura máxima */
+    color: white;
+}
+form p{
+    margin-bottom: -1%;
+    margin-top: -1.5%;
 }
 form img{
-    margin-left: 22%;
+    width: 30%;
+    margin-bottom: 4%;
+    border-radius: 3px;
 }
 
 form h1{
     color: #aaaaaa;
+}
+form h5{
+    margin: 0;
+    margin-bottom: 4%;
+    color: rgb(165, 165, 165);
 }
 form input {
     margin: 10px 0; /* Margem vertical para espaçamento uniforme */
@@ -42,10 +55,10 @@ input[type='file'] {
     display: none
   }
 
-#fileInput{
+#upload-edit-file{
     background-color: #b1911d;
     color: #ddd;
-    padding: 1% 5% 1% 5%;
+    padding: 2% 1% 2% 1%;
     display: flex;
     align-items: center;
     border-radius: 3px;
@@ -53,13 +66,18 @@ input[type='file'] {
     margin-bottom: 10%;
 }
 
+#upload-edit-file i{
+    font-size: 2rem;
+    margin-right: 5%;
+    margin-left: 3%;
+}
+
 #fileInput i{
     font-size: 2rem;
     margin-right: 5%;
 }
 
-
-#addProduto{
+#btt-excluir{
     cursor: pointer;
     background-color: #b1911d;
     color: white;

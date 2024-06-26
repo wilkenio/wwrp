@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -74,16 +75,16 @@
                         </div>
                         <p><?php echo $breve_descricao; ?></p>
                         <b><?php echo "R$ " . $valor; ?></b>
-                        <a href="pages/produto.php?id=<?php echo $id_produto; ?>"><button
+                        <a id="btt-comprar" class="button-card" href="pages/produto.php?id=<?php echo $id_produto; ?>"><button
                                 class="comprar">Comprar</button></a>
                         <?php
                         // Mostrar o botão de edição se for administrador
                         if ($isAdmin) {
                             ?>
-                            <a href="pages/editaProduto.php?id=<?php echo $id_produto; ?>">
+                            <a id="btt-edit" class="button-card" href="pages/editaProduto.php?id=<?php echo $id_produto; ?>">
                                 <button class="editar">Editar</button>
                             </a>
-                            <a href="pages/excluirProduto.php?id=<?php echo $id_produto; ?>">
+                            <a id="btt-excluir" class="button-card" href="pages/excluirProduto.php?id=<?php echo $id_produto; ?>">
                                 <button class="editar">Excluir</button>
                             </a>
                             <?php
@@ -130,16 +131,16 @@
                         </div>
                         <p><?php echo $breve_descricao; ?></p>
                         <b><?php echo "R$ " . $valor; ?></b>
-                        <a href="pages/produto.php?id=<?php echo $id_produto; ?>"><button
+                        <a id="btt-comprar" class="button-card" href="pages/produto.php?id=<?php echo $id_produto; ?>"><button
                                 class="comprar">Comprar</button></a>
                         <?php
                         // Mostrar o botão de edição se for administrador
                         if ($isAdmin) {
                             ?>
-                            <a href="pages/editaProduto.php?id=<?php echo $id_produto; ?>">
+                            <a id="btt-edit" class="button-card" href="pages/editaProduto.php?id=<?php echo $id_produto; ?>">
                                 <button class="editar">Editar</button>
                             </a>
-                            <a href="pages/excluirProduto.php?id=<?php echo $id_produto; ?>">
+                            <a id="btt-excluir" class="button-card" href="pages/excluirProduto.php?id=<?php echo $id_produto; ?>">
                                 <button class="editar">Excluir</button>
                             </a>
                             <?php

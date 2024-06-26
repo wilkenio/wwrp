@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Produto</title>
     <link rel="stylesheet" href="../css/addProduto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
@@ -16,12 +17,13 @@
     }
 ?>
     <form action="../backend/addProduto.php" method="post" enctype="multipart/form-data">
-        <h1>Adicionar Produto</h1>
-        <input type="file" name="produto_imagem" required>
+        <h1><i class="bi bi-box"></i> Adicionar Produto</h1>
+        <input  type="file" name="produto_imagem" required>
+        <label id="fileInput" for="fileInput"><i class="bi bi-cloud-arrow-up"></i> Carregar Imagem</label>
         <input type="text" name="nome_produto" placeholder="Nome Produto" required>
         <input type="text" name="breve_descricao" placeholder="Breve Descrição" required>
         <input type="number" name="valor" min="0.1" placeholder="Valor" required>
-        <button type="submit">Adicionar Produto</button>
+        <button id="addProduto" type="submit">Adicionar Produto <i class="bi bi-plus-circle"></i></button>
         <a href="../index.php">Voltar para o Site</a>
     </form>
 </body>

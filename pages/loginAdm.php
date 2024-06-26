@@ -15,10 +15,11 @@
     }
 ?>
 <form action="../backend/loginAdm.php" method="post">
+    <img src="../images/logo.png" width="50%" alt="">
     <h1>Login Adm</h1>
     <input name="email" type="email" placeholder="E-mail">
     <input name="senha" type="password" placeholder="Senha">
-    <input type="submit">
+    <input id="entrar" type="submit" value="Entrar">
     <a href="../index.php">Ver site</a>
 </form>
 </body>

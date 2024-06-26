@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Produto</title>
+    <link rel="stylesheet" href="../css/excluirProduto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -48,14 +50,14 @@
     ?>
 
     <form action="../backend/excluirProduto.php" method="post" enctype="multipart/form-data">
-        <h1>Exluir Produto</h1>
+        <h1><i class="bi bi-trash"></i> Excluir Produto</h1>
         <img id="img-edit" width="10%" src="../backend/<?php echo $imagem_url; ?>" alt="">
         <input type="hidden" name="id_produto" value="<?php echo $id_produto; ?>">
 
         <h3><?php echo $nome_produto; ?></h3>
         <h5><?php echo $breve_descricao; ?></h5>
-        <b><?php echo $valor; ?></b>
-        <button type="submit">Confirmar exclusão</button>
+        <b>R$ <?php echo $valor; ?></b>
+        <button id="btt-excluir" type="submit">Confirmar exclusão <i class="bi bi-trash-fill"></i></button>
         <a href="../index.php">Voltar para o Site</a>
     </form>
 </body>

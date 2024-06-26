@@ -1,11 +1,11 @@
 body {
-    background-color: #303030;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Corrigido para ocupar toda a altura da tela */
     margin: 0; /* Remove a margem padrão do body */
     font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #303030;
 }
 a{
     text-align: center;
@@ -13,51 +13,74 @@ a{
     color: #b1911d;
 }
 form {
-
+    background-color: #ffffff;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 5%; /* Ajustado para manter consistência */
     border-radius: 8px; /* Arredondamento maior para um visual mais suave */
-    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.363); /* Adiciona uma sombra leve */
-    width: 100%; /* Para dispositivos móveis */
-    max-width: 400px; /* Limita a largura máxima */
+    box-shadow: 0 4px 60px rgba(194, 194, 194, 0.514); /* Adiciona uma sombra leve */
+    justify-content: start;
+    align-items: start;
+    margin: 2%;
 }
 form img{
-    margin-left: 22%;
+    width: 40%;
+    border-radius: 5px;
 }
-
+form div{
+    width: 56%;
+    padding: 2%;
+}
 form h1{
     color: #aaaaaa;
 }
-form input {
+form b{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+}
+form h5,h3{
+    margin: 0;
+}
+form h5{
+    color: #818181;
+}
+form p{
+    margin-bottom: -1.2%;
+    margin-top: -1%;
+}
+
+form input, textarea {
     margin: 10px 0; /* Margem vertical para espaçamento uniforme */
     padding: 12px; /* Aumenta o padding para inputs maiores */
     border: 1px solid #ddd; /* Adiciona uma borda leve */
     border-radius: 4px; /* Arredondamento dos inputs */
     font-size: 14px; /* Tamanho da fonte */
+    width: 60%;
+    border: 1px solid rgb(160, 160, 160);
 }
 
 
-input[type='file'] {
-    display: none
-  }
 
-#fileInput{
+#gerapix{
     background-color: #b1911d;
     color: #ddd;
-    padding: 1% 5% 1% 5%;
+    padding: 2% 7% 2% 7%;
     display: flex;
     align-items: center;
     border-radius: 3px;
     cursor: pointer;
     margin-bottom: 10%;
+    border: none;
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
-#fileInput i{
-    font-size: 2rem;
-    margin-right: 5%;
+form i{
+    margin-left: 5%;
 }
-
 
 #addProduto{
     cursor: pointer;
@@ -72,4 +95,20 @@ h1 {
     text-align: center; /* Centraliza o texto */
     color: #fff; /* Cor do texto */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+@media (max-width: 900px) {
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    form div{
+        width: 100%;
+    }
+    form input, textarea {
+        width: 90%;
+    }
+    #gerapix{
+        width: 40%;
+    }
 }
