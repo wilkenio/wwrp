@@ -18,8 +18,8 @@
 ?>
     <form action="../backend/addProduto.php" method="post" enctype="multipart/form-data">
         <h1><i class="bi bi-box"></i> Adicionar Produto</h1>
-        <input  type="file" name="produto_imagem" required>
-        <label id="fileInput" for="fileInput"><i class="bi bi-cloud-arrow-up"></i> Carregar Imagem</label>
+        <input  id="file" type="file" name="produto_imagem" required>
+        <label id="fileInput" for="file"><i class="bi bi-cloud-arrow-up"></i> Carregar Imagem</label>
         <input type="text" name="nome_produto" placeholder="Nome Produto" required>
         <input type="text" name="breve_descricao" placeholder="Breve Descrição" required>
         <input type="number" name="valor" min="0.1" placeholder="Valor" required>

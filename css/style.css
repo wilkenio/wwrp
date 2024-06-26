@@ -154,6 +154,8 @@ p {
 
 .col-4 img {
     width: 100%;
+    height: 40vh;
+    object-fit: cover;
 }
 
 .title {

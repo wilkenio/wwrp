@@ -9,7 +9,7 @@
     
 
 <?php 
- require 'connectDatabase/connectDb.php'; 
+ require 'connectDatabase/connectDB.php'; 
  session_start(); 
 
 
