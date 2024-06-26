@@ -22,7 +22,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-2">
-                        <h1>Wesley</h1>
                         <h1>Encontre <br>seu novo manto!</h1>
                         <p>Sucesso nem sempre é sobre grandeza. é sobre consistência. consistir em trabalho duro gera
                             sucesso. Com isso a grandeza virá.
@@ -67,11 +66,11 @@
                         <img src="backend/<?php echo $imagem_url; ?>">
                         <h4><?php echo $nome_produto; ?></h4>
                         <div class="rating">
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                         </div>
                         <p><?php echo $breve_descricao; ?></p>
                         <b><?php echo "R$ " . $valor; ?></b>
@@ -123,11 +122,11 @@
                         <img src="backend/<?php echo $imagem_url; ?>">
                         <h4><?php echo $nome_produto; ?></h4>
                         <div class="rating">
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                         </div>
                         <p><?php echo $breve_descricao; ?></p>
                         <b><?php echo "R$ " . $valor; ?></b>

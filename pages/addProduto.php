@@ -16,7 +16,7 @@
     }
 ?>
     <form action="../backend/addProduto.php" method="post" enctype="multipart/form-data">
-        <h1>Add Produto</h1>
+        <h1>Adicionar Produto</h1>
         <input type="file" name="produto_imagem" required>
         <input type="text" name="nome_produto" placeholder="Nome Produto" required>
         <input type="text" name="breve_descricao" placeholder="Breve Descrição" required>
