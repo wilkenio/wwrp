@@ -22,6 +22,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-2">
+                        <h1>Wesley</h1>
                         <h1>Encontre <br>seu novo manto!</h1>
                         <p>Sucesso nem sempre é sobre grandeza. é sobre consistência. consistir em trabalho duro gera
                             sucesso. Com isso a grandeza virá.
