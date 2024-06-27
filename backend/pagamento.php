@@ -52,7 +52,7 @@ function gerarPixEPersistir($id_produto, $qtd, $endereco) {
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
-        "Authorization: Bearer APP_USR-909053041483213-010316-3c1ea708956b75fef31c61f30bc4fb5b-394928107",
+        "Authorization: SEU TOKEN",
         "Content-Type: application/json",
     ]);
 
