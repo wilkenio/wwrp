@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#aprovado{
+    background-color: green;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    animation: pisca 2s;
+    transition: 1s;
+    z-index: 8;
+    top: 0;
+}
+
+#aprovado i{
+    animation: pisca 2s;
+}
+
+@keyframes pisca {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove a margem padrão do body */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #303030;
+}
+a{
+    text-align: center;
+    margin-top: 10%;
+    color: #b1911d;
+}
+form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%; /* Ajustado para manter consistência */
+    border-radius: 8px; /* Arredondamento maior para um visual mais suave */
+    box-shadow: 0 4px 60px rgba(194, 194, 194, 0.514); /* Adiciona uma sombra leve */
+    justify-content: start;
+    align-items: start;
+    margin: 2%;
+}
+form img{
+    width: 10%;
+}
+
+#qr-code{
+    width: 22%;
+    padding: 3%;
+    background-color: #303030;
+    border-radius: 13px;
+    margin: 1% 0% 5% 0%;
+}
+form div{
+    width: 56%;
+    padding: 2%;
+}
+
+form b{
+    display: flex;
+    width: 100%;
+}
+form h1,h2,h3{
+    margin: 0;
+    width: 100%;
+}
+form h5{
+    color: #818181;
+    width: 60%;
+}
+form p{
+    margin-bottom: -1.2%;
+    margin-top: -1%;
+}
+
+form input, textarea {
+    margin: 10px 0; /* Margem vertical para espaçamento uniforme */
+    padding: 12px; /* Aumenta o padding para inputs maiores */
+    border: 1px solid #ddd; /* Adiciona uma borda leve */
+    border-radius: 4px; /* Arredondamento dos inputs */
+    font-size: 14px; /* Tamanho da fonte */
+    width: 80%;
+    border: 1px solid rgb(160, 160, 160);
+}
+
+#copiar{
+    cursor: pointer;
+    background-color: #b1911d;
+    color: white;
+    border: none;
+    padding: 1.2%;
+    border-radius: 3px;
+    margin-top: 0.9%;
+    margin-left: 1%;
+}
+
+#copiar{
+    cursor: pointer;
+    background-color: #b1911d;
+    color: white;
+    border: none;
+    padding: 1.2%;
+    border-radius: 3px;
+    margin-top: 0.9%;
+    margin-left: 1%;
+}
+
+h1 {
+    padding: 10px 0; /* Padding vertical */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+#img-produto{
+    display: flex;
+}
+
+#produto-previa{
+    box-shadow: 0px 0px 21px -3px rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    border-left: 4px solid #b1911d;
+    gap: 2%;
+    margin-top: 5%;
+}
+@media (max-width: 900px) {
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    form div{
+        width: 100%;
+    }
+    form input, textarea {
+        width: 90%;
+    }
+    #gerapix{
+        width: 40%;
+    }
+    form img{
+        width:30%;
+    }
+    #produto-previa{
+        align-items:start;
+        flex-direction:column;
+    }
+}
