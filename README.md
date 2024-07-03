@@ -33,7 +33,7 @@ Este projeto é um mini e-commerce desenvolvido como trabalho acadêmico, utiliz
 - JavaScript
 - PHP
 - Bootstrap (possivelmente utilizado para o frontend)
-- PHPMyAdmin (para gerenciamento do banco de dados)
+- PHPMyAdmin (para gerenciar o banco de dados)
 
 ## Como Utilizar 📋
 
