@@ -1,4 +1,5 @@
 # Mini E-commerce de Camisas Esportivas
+[![Deploy](https://img.shields.io/badge/deploy-offline-red.svg)](#)
 
 Este projeto é um mini e-commerce desenvolvido como trabalho acadêmico, utilizando HTML, CSS, JavaScript, PHP e integração com uma API bancária para pagamentos via PIX.
 
