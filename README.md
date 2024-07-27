@@ -1,7 +1,13 @@
 # Mini E-commerce de Camisas Esportivas
-[![Deploy](https://img.shields.io/badge/deploy-offline-red.svg)](#)
-
 Este projeto é um mini e-commerce desenvolvido como trabalho acadêmico, utilizando HTML, CSS, JavaScript, PHP e integração com uma API bancária para pagamentos via PIX.
+<br><br>
+[![Deploy](https://img.shields.io/badge/deploy-online-green.svg)](https://fourdevs.com.br/wilkenio/wwrp/)
+<br> <br> Acesse: [Página Principal](https://fourdevs.com.br/wilkenio/wwrp/)
+<br> Página do ADM: [Login ADM](https://fourdevs.com.br/wilkenio/wwrp/pages/loginAdm.php)
+
+## 🔐 Login 
+-  Email: wwrp@gmail.com
+- Senha: adm
 
 ## Funcionalidades Principais 🚀
 
@@ -33,7 +39,7 @@ Este projeto é um mini e-commerce desenvolvido como trabalho acadêmico, utiliz
 - CSS
 - JavaScript
 - PHP
-- Bootstrap (possivelmente utilizado para o frontend)
+- Bootstrap (apenas na página de vendas)
 - PHPMyAdmin (para gerenciamento do banco de dados)
 
 ## Como Utilizar 📋
